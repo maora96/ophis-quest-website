@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4C4D6C;
+}
+
+/* header styles */
+header {
+    width:100%;
+}
+
+header nav {
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+}
+
+header .banner {
+    height: 400px;
+    background-color: #FFFFFF;
+}
+
+/* archive styles */
+
+.archive-box { /* main page */
+    width:90%;
+    margin: 0 auto;
+    height: 300px;
+    background-color: #FFFFFF;
+}
+
+.archive-box .container-fluid { /* main page */
+    padding:0;
+}
+
+.archive-box nav { /* main page */
+    height:90px;
+    background-color:#E5A75E;
+}
+
+.archive-page { /* archive page */
+    width:90%;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+
+.archive-page .container-fluid { /* archive page */
+    padding: 0;
+}
+
+.archive-page nav { /* archive page */
+    height:90px;
+    background-color:#E5A75E;
+}
+
+.archive-page  .archive-pagination {
+    background-color: #E5A75E;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* content styles */
+
+.content {
+    width:90%;
+    margin: 0 auto;
+}
+
+.content .container-fluid {
+    padding:0;
+}
+
+.content article {
+    background-color: #FFFFFF;
+}
+
+.content aside .sidebar-box {
+    background-color: #FFFFFF;
+}
+
+.content .follower-list-box {
+    width: 100%;
+}
+
+.content .follower-list-box .follower-box {
+    height: 80px;
+    background-color: #E5A75E;
+    margin-bottom: 25px;
+}
+
+.content .interaction-box {
+    background-color: #FFFFFF;
+}
+
+.content .interaction-box .interaction-pagination {
+    height:70px;
+    background-color:#DD7035;
+}
+
+/* choose race styles */
+
+.choose-race-content {
+width:90%;
+margin: 0 auto;
+background-color: #FFFFFF;
+}
+
+.choose-race-content .container-fluid {
+    padding: 0;
+}
+
+/* footer styles */
+
+footer {
+    background-color:#E5A75E;
+    width:100%;
+}
+
+/* MEDIA QUERIES */
+
