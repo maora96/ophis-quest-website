@@ -10,115 +10,134 @@ body {
 
 /* header styles */
 header {
-    width:100%;
+    width: 100%;
 }
 
-header nav {
-    width: 90%;
+.nav-wrapper {
+    width: 100%;
     height: 100px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
-header .banner {
+nav {
+    width: 90%;
+    margin: 0 auto;
+    display: inline-grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+nav ul li{
+   display: inline-grid;
+}
+
+/* banner styles */
+
+.banner {
+    width: 100%;
     height: 400px;
-    background-color: #FFFFFF;
+    background-color:white;
 }
 
-/* archive styles */
+/* archive box styles */
 
-.archive-box { /* main page */
+.archive-box {
     width:90%;
-    margin: 0 auto;
     height: 300px;
-    background-color: #FFFFFF;
-}
-
-.archive-box .container-fluid { /* main page */
-    padding:0;
-}
-
-.archive-box nav { /* main page */
-    height:90px;
-    background-color:#E5A75E;
-}
-
-.archive-page { /* archive page */
-    width:90%;
+    background-color: white;
     margin: 0 auto;
-    background-color: #FFFFFF;
+    margin-top:20px;
 }
 
-.archive-page .container-fluid { /* archive page */
-    padding: 0;
+.archive-box ul {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.archive-page nav { /* archive page */
-    height:90px;
-    background-color:#E5A75E;
-}
-
-.archive-page  .archive-pagination {
-    background-color: #E5A75E;
-    width: 50%;
-    margin: 0 auto;
+.archive-box ul li {
+    list-style-type: none;
 }
 
 /* content styles */
 
 .content {
+    width: 90%;
+    height: auto;
+    margin: 50px auto ;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.content .post-area .post {
+    width: 95%;
+    background-color: white;
+    min-height:500px;
+}
+
+.content .post-area .post-research {
+    width: 95%;
+    background-color: white;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.content .post-area .interaction-box {
+    width:95%;
+    background-color:white;
+    margin-top:30px;
+}
+
+.content .post-area .interaction-box .interaction-box-content {
+    height:300px;
+}
+
+.content .post-area .followerlist .follower {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.content .post-area .followerlist .follower h2 {
+    margin-right: 30px;
+
+}
+
+.content .sidebar .sidebar-box {
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.content-single {
     width:90%;
-    margin: 0 auto;
+    height: auto;
+    margin: 50px auto;
 }
 
-.content .container-fluid {
-    padding:0;
+.content-single .single-post {
+    width:100%;
+    background-color:white;
 }
 
-.content article {
-    background-color: #FFFFFF;
+.content-single .single-post .race-card-box {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.content aside .sidebar-box {
-    background-color: #FFFFFF;
+.content-single .single-post .race-card-box .race-card {
+    margin-right: 30px;
 }
 
-.content .follower-list-box {
-    width: 100%;
+.content-single .single-post .archive-nav ul {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.content .follower-list-box .follower-box {
-    height: 80px;
-    background-color: #E5A75E;
-    margin-bottom: 25px;
-}
-
-.content .interaction-box {
-    background-color: #FFFFFF;
-}
-
-.content .interaction-box .interaction-pagination {
-    height:70px;
-    background-color:#DD7035;
-}
-
-/* choose race styles */
-
-.choose-race-content {
-width:90%;
-margin: 0 auto;
-background-color: #FFFFFF;
-}
-
-.choose-race-content .container-fluid {
-    padding: 0;
+.content-single .single-post .archive-nav ul li {
+    list-style-type: none;
 }
 
 /* footer styles */
 
 footer {
     background-color:#E5A75E;
-    width:100%;
+    height:100px;
 }
-
-/* MEDIA QUERIES */
-
