@@ -141,3 +141,35 @@ footer {
     background-color:#E5A75E;
     height:100px;
 }
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 576px) {
+    .archive-menu ul {
+        flex-direction: column;
+}
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .post-area {
+        margin-bottom: 50px;
+    }
+
+    .content .post-area .post {
+        width: 100%;
+    }
+
+    .content .post-area .interaction-box {
+        width: 100%;
+    }
+
+    .content .post-area .post-research {
+        grid-template-columns: 1fr;
+    }
+
+    .content-single .single-post .archive-nav ul {
+        flex-direction: column;
+    }
+}
