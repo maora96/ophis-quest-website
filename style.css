@@ -6,6 +6,7 @@
 
 body {
     background-color: #4C4D6C;
+    font-family: 'Asap', sans-serif;
 }
 
 /* header styles */
@@ -25,27 +26,90 @@ nav {
     margin: 0 auto;
     display: inline-grid;
     grid-template-columns: 1fr 4fr 1fr;
-}
-nav ul li{
-   display: inline-grid;
+
 }
 
+nav .logo {
+    width:100px;
+    height:60px;
+    background-color:#E5A75E;
+    align-self: center;
+    justify-self: center;
+    border-radius: 5px;
+}
+
+nav ul {
+    justify-self: center;
+}
+
+nav ul li {
+    display: inline-grid;
+    line-height: 100px;
+    margin-right:50px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+nav .account-info {
+    justify-self: center;
+    align-self: center;
+    color: white;
+    font-weight: 500;
+}
+
+nav .account-info .login {
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #454545;
+    background-color:#E5A75E;
+    padding:5px 10px;
+    border-radius: 5px;
+}
+
+nav .account-info .fas {
+    color: #E5A75E;
+    background-color: white;
+    padding:5px;
+    border-radius:5px;
+}
 /* banner styles */
 
 .banner {
     width: 100%;
-    height: 400px;
+    max-height: 400px;
     background-color:white;
+}
+
+.banner img {
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    background-size: contain;
+    background-position: center;
+    object-fit: cover;
 }
 
 /* archive box styles */
 
 .archive-box {
     width:90%;
-    height: 300px;
+    height: 350px;
     background-color: white;
     margin: 0 auto;
-    margin-top:20px;
+    margin-top:30px;
+    border-radius: 5px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.archive-box .archive-menu {
+    background-color:#E5A75E;
 }
 
 .archive-box ul {
@@ -54,8 +118,39 @@ nav ul li{
 }
 
 .archive-box ul li {
+    font-weight: 500;
+    font-size: 20px;
     list-style-type: none;
+    line-height: 90px;
+    display:inline-block;
+    text-transform: uppercase;
 }
+
+.archive-box ul li a {
+    text-decoration: none;
+    color: #454545;
+}
+
+.archive-box .archive-menu ul .archive-title {
+    background-color: white;
+    width: 33%;
+    text-align: center;
+}
+
+.archive-box .archive-posts {
+    height: calc(100% - 90px);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.archive-box .archive-posts .archive-single-post {
+    width: 200px;
+    height: 175px;
+    background-color:#3B3B3B;
+    border-radius: 10px;
+}
+
 
 /* content styles */
 
@@ -67,17 +162,121 @@ nav ul li{
     grid-template-columns: 2fr 1fr;
 }
 
+.content-follower-list {
+    width: 90%;
+    height: auto;
+    margin: 50px auto ;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.content .post-area {
+    height: auto;
+}
+
 .content .post-area .post {
     width: 95%;
     background-color: white;
-    min-height:500px;
+    min-height: 500px;
+    border-radius: 10px;
+}
+
+.content .post-area .post .post-pagination {
+    height: 40px;
+    background-color: #DD7035;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+.content .post-area .post h1 {
+    color: #454545;
+    line-height: 50px;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #E5A75E;
+    padding: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 5px solid #DD7035;
+}
+
+.content .post-area .post .square-border {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.content .post-area .post .post-text {
+    padding: 40px;
+    font-size: 18px;
+}
+
+.content .post-area .post .post-text p {
+    margin-bottom: 20px;
 }
 
 .content .post-area .post-research {
     width: 95%;
+    height: auto;
     background-color: white;
     display:grid;
     grid-template-columns: 2fr 1fr;
+    border-radius: 10px;
+}
+
+.content .post-area .post-research .research-list {
+    border-right: 5px solid #DD7035;
+}
+
+.content .post-area .post-research h1 {
+    color: #454545;
+    line-height: 50px;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #E5A75E;
+    padding: 40px;
+    border-top-left-radius: 10px;
+    border-bottom: 5px solid #DD7035;
+}
+
+.content .post-area .post-research .research-title {
+    border-radius: 0;
+    font-size: 25px;
+    line-height:10px;
+    display: inline-block;
+    border-bottom: none;
+    padding:30px;
+}
+
+.content .post-area .post-research .research-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color:#E5A75E;
+    border-bottom: 5px solid #DD7035;
+}
+
+.content .post-area .post-research .research-text {
+    padding: 40px;
+    font-size: 18px;
+}
+
+
+.content .post-area .post-research .post-text {
+    padding: 40px;
+    font-size: 18px;
+    min-height: 600px;
+}
+
+.content .post-area .post-research .research-image-description .research-img {
+    background-color: #3B3B3B;
+    width: 100%;
+    height: 300px;
 }
 
 .content .post-area .interaction-box {
@@ -90,19 +289,73 @@ nav ul li{
     height:300px;
 }
 
-.content .post-area .followerlist .follower {
+.content .post-area .interaction-box .interaction-box-pagination {
+    line-height: 90px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background-color:#DD7035;
+}
+
+.content-follower-list .post-area .followerlist {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-follower-list .post-area .followerlist .follower {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 50px;
+    background-color: #E5A75E;
+    width: 800px;
+    height: 100px;
+    border-radius: 50px;
+    padding: 20px;
 }
 
-.content .post-area .followerlist .follower h2 {
+.content-follower-list .post-area .followerlist .follower h2 {
     margin-right: 30px;
-
+    color: white;
+    text-transform: uppercase;
+    font-weight: normal;
+    background-color: #363636;
+    border-radius: 50px;
+    padding: 15px;
 }
 
-.content .sidebar .sidebar-box {
+.content-follower-list .post-area .followerlist .follower .icons {
+    align-self: flex-end;
+}
+
+.content-follower-list.post-area .followerlist .follower .icons img {
+    margin-left: 20px;
+}
+
+
+.sidebar .sidebar-box {
     background-color: white;
     margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.sidebar .sidebar-box h1 {
+    color: #454545;
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #E5A75E;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 5px solid #DD7035;
+}
+
+.sidebar .sidebar-box .sidebar-text {
+    padding: 40px;
+    font-size: 18px;
 }
 
 .content-single {
@@ -113,18 +366,63 @@ nav ul li{
 
 .content-single .single-post {
     width:100%;
+    min-height: 800px;
     background-color:white;
+    border-radius: 10px;
+}
+
+.content-single .single-post h1 {
+    color: #454545;
+    line-height: 50px;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+    background-color: #E5A75E;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 5px solid #DD7035;
 }
 
 .content-single .single-post .race-card-box {
     display:flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .content-single .single-post .race-card-box .race-card {
-    margin-right: 30px;
+    width: 320px;
+
 }
+
+.content-single .single-post .race-card-box .race-card .race-img {
+    width:320px;
+    height:300px;
+    background-color:#3B3B3B;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.content-single .single-post .race-card-box .race-card .race-description {
+    background-color: #E5A75E;
+    padding:20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.content-single .single-post .race-card-box .race-card .race-description h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.content-single .single-post .archive-nav {
+    background-color:#E5A75E;
+}
+
 
 .content-single .single-post .archive-nav ul {
     display: flex;
@@ -132,7 +430,76 @@ nav ul li{
 }
 
 .content-single .single-post .archive-nav ul li {
+    line-height: 90px;
     list-style-type: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #3B3B3B;
+}
+
+.content-single .single-post .archive-nav ul li a {
+    text-decoration: none;
+    color: #3B3B3B;
+}
+
+.content-single .single-post .archive-nav .archive-title {
+    background-color: white;
+    width: 33%;
+    text-align: center;
+}
+
+.content-single .single-post .archive-page-box {
+    display:flex;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+    padding:30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.content-single .single-post .archive-general {
+    padding-bottom: 20px;
+}
+
+.content-single .single-post .archive-general .archive-pagination {
+    background-color: #E5A75E;
+    font-size: 40px;
+    line-height:90px;
+    margin: 0 auto;
+    width: 70%;
+    height: 90px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.content-single .single-post .archive-page-box .archive-single {
+    width: 400px;
+    height: 420px;
+    background-color:#3B3B3B;
+    border-radius: 10px;
+    margin-right:40px;
+    margin-bottom: 50px;
+}
+
+.content-single .single-post .followerbox {
+    display:flex;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+    padding:30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.content-single .single-post .followerbox .follower-single {
+    width: 400px;
+    height: 420px;
+    background-color:#3B3B3B;
+    border-radius: 10px;
+    margin-right:40px;
+    margin-bottom: 50px;
 }
 
 /* footer styles */
@@ -140,6 +507,13 @@ nav ul li{
 footer {
     background-color:#E5A75E;
     height:100px;
+}
+
+footer h1 {
+    color: #454545;
+    line-height: 100px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 /* MEDIA QUERIES */
@@ -172,4 +546,93 @@ footer {
     .content-single .single-post .archive-nav ul {
         flex-direction: column;
     }
+
+    .content-follower-list .post-area .followerlist .follower {
+        justify-content: center;
+        height: auto;
+    }
 }
+
+@media only screen and (max-width: 992px) {
+
+    .archive-box {
+        height: auto;
+    }
+    .archive-box .archive-posts {
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    .archive-box .archive-posts .archive-single-post {
+        margin-bottom: 30px;
+    }
+
+    .archive-box ul {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .archive-box .archive-menu ul .archive-title {
+        width:100%;
+    }
+
+    .content .post-area .post h1 {
+        padding:30px;
+    }
+
+    .content .post-area .post .post-text {
+        font-size: 16px;
+    }
+
+    .sidebar .sidebar-box .sidebar-text {
+        font-size: 16px;
+        padding:30px;
+    }
+
+    .content .post-area .post .post-text {
+        font-size: 16px;
+    }
+
+    .content .post-area .post-research {
+        grid-template-columns: 1fr;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+    .content .post-area {
+        place-self: center;
+        width: 100%;
+    }
+
+    .content .post-area .post-research {
+        margin-bottom: 50px;
+    }
+
+    .character {
+        place-self: center;
+    }
+
+    .content-single .single-post .race-card-box .race-card {
+        margin-bottom: 30px;
+    }
+
+    .content-follower-list .post-area .followerlist .follower {
+        flex-wrap: wrap;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .content .post-area .post-research {
+        grid-template-columns: 1fr;
+    }
+
+    .content-follower-list {
+        grid-template-columns: 1fr;
+    }
+}
+
