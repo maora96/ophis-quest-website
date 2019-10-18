@@ -531,6 +531,25 @@ nav .account-info .fas {
     background-color: #363636;
 }
 
+.compendium-single {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-right:40px;
+    margin-bottom: 50px;
+    background-color: #363636;
+}
+
+.compendium-single img {
+    width: 100%;
+    max-height: 200px;
+    overflow: hidden;
+    background-size: contain;
+    background-position: center;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 .archive-general {
     padding-bottom: 20px;
 }
@@ -696,7 +715,7 @@ footer h1 {
         flex-wrap: wrap;
         width: auto;
     }
-    
+
 }
 
 @media only screen and (max-width: 1200px) {
