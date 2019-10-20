@@ -24,8 +24,8 @@ header {
 nav {
     width: 90%;
     margin: 0 auto;
-    display: inline-grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    display: flex;
+    justify-content: space-around;
 
 }
 
@@ -48,13 +48,6 @@ nav .logo img {
     border-radius: 5px;
 }
 
-nav .mobile-nav {
-    display: none;
-}
-
-nav .mobile-nav .hamburger-menu {
-    display: none;
-}
 
 
 nav ul {
@@ -593,6 +586,15 @@ nav .account-info .fas {
     border-radius: 10px;
 }
 
+label {
+    display: none;
+
+}
+
+#toggle {
+    display: none;
+}
+
 /* footer styles */
 
 footer {
@@ -714,6 +716,44 @@ footer h1 {
     .content-follower-list .post-area .followerlist .follower {
         flex-wrap: wrap;
         width: auto;
+    }
+
+    label {
+        display: block;
+        cursor: pointer;
+        line-height: 100px;
+        font-size: 40px;
+        color: white;
+    }
+
+    .mobile-nav {
+        width: 80%;
+    }
+
+    .hamburger-menu {
+        text-align: center;
+        width:100%;
+        display:none;
+        position: absolute;
+        left: -1px;
+        background-color: #4C4D6C;
+    }
+
+    .hamburger-menu li {
+        display: block;
+        line-height: 70px;
+        z-index: 9999;
+        text-align: center;
+        border-bottom: 1px solid white;
+        margin-right: 0;
+    }
+
+    #toggle:checked + .hamburger-menu {
+        display: block;
+    }
+
+    .logo {
+        display: none;
     }
 
 }
