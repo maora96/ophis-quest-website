@@ -6,9 +6,33 @@
     <div class="single-post">
         <div class="archive-nav">
             <ul>
-                <li><a href="#">leia do início</a></li>
+                    <?php 
+                    $firstpost = new WP_Query(array(
+                        'posts_per_page' => 1,
+                        'order' => 'ASC'
+                    ));
+
+                    while ($firstpost->have_posts()) {
+                        $firstpost->the_post();
+                    }
+
+                    ?>
+                <li><a href="<?php the_permalink() ?>">leia do início</a></li>
                 <li class="archive-title">arquivo</li>
-                <li><a href="#">veja última postagem</a></li>
+
+                <?php 
+                    $lastpost = new WP_Query(array(
+                        'posts_per_page' => 1,
+                        'order' => 'DESC'
+                    ));
+
+                    while ($lastpost->have_posts()) {
+                        $lastpost->the_post();
+                    }
+
+                    ?>
+
+                <li><a href="<?php the_permalink() ?>">veja última postagem</a></li>
             </ul>
         </div>
 
@@ -17,7 +41,6 @@
 
             <?php 
                     $archive = new WP_Query(array(
-                        'posts_per_page' => 9,
                         'category_name' => 'archive',
                         
                     ));
@@ -31,18 +54,13 @@
                     <?php }
                     ?>
 
-<div class="pagination">
-                <?php echo paginate_links();
-                ?>
-                </div>
+
                 
 
             
             </div>
 
-            <div class="archive-pagination">
-                << | >>
-            </div>
+           
         </div>
     </div>
 </section>
