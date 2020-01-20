@@ -1,4 +1,10 @@
-* {
+/*
+Theme Name: Ophi's Quest
+Author: Nyphren
+Version: 1.0
+ */
+
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -111,7 +117,6 @@ nav .account-info .fas {
 
 .archive-box {
     width:90%;
-    height: 350px;
     background-color: white;
     margin: 0 auto;
     margin-top:30px;
@@ -149,11 +154,29 @@ nav .account-info .fas {
     text-align: center;
 }
 
+.archive-box .archive-menu .archive-title button {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    list-style-type: none;
+    line-height: 90px;
+    display: inline-block;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+
 .archive-box .archive-posts {
     height: calc(100% - 90px);
-    display: flex;
     align-items: center;
     justify-content: space-evenly;
+
+    display: none;
+    overflow: hidden;
+    padding: 40px
 }
 
 .archive-box .archive-posts .archive-single-post {
@@ -197,8 +220,13 @@ nav .account-info .fas {
 .content .post-area .post {
     width: 95%;
     background-color: white;
-    min-height: 500px;
+    padding-bottom:30px;
     border-radius: 10px;
+    margin-bottom:30px;
+}
+
+.content .post-area .post a {
+    text-decoration: none;
 }
 
 .content .post-area .post .post-pagination {
@@ -235,9 +263,21 @@ nav .account-info .fas {
     font-size: 18px;
 }
 
+.content .post-area .post .post-text a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding:10px;
+    background-color: #E5A75E;
+    color: black;
+    border-radius:10px;
+    float:right;
+}
+
 .content .post-area .post .post-text p {
     margin-bottom: 20px;
 }
+
+
 
 .content .post-area .post-research {
     width: 95%;
@@ -291,6 +331,14 @@ nav .account-info .fas {
     padding: 40px;
     font-size: 18px;
     min-height: 600px;
+}
+
+.content .post-area .post-research .research-image-description {
+    display: none;
+}
+
+.content .post-area .post-research .research-image-description.active {
+    display: block;
 }
 
 .content .post-area .post-research .research-image-description .research-img {
@@ -362,11 +410,16 @@ nav .account-info .fas {
     margin-left: 20px;
 }
 
+.sidebar {
+    list-style-type: none;
+}
+
 
 .sidebar .sidebar-box {
     background-color: white;
     margin-bottom: 30px;
     border-radius: 10px;
+    
 }
 
 .sidebar .sidebar-box h1 {
@@ -530,7 +583,6 @@ nav .account-info .fas {
     border-radius: 10px;
     margin-right:40px;
     margin-bottom: 50px;
-    background-color: #363636;
 }
 
 .compendium-single img {
@@ -570,7 +622,6 @@ nav .account-info .fas {
 .content-single .single-post .followerbox .follower-single {
     width: 400px;
     height: 420px;
-    background-color:#3B3B3B;
     border-radius: 10px;
     margin-right:40px;
     margin-bottom: 50px;
@@ -595,18 +646,101 @@ label {
     display: none;
 }
 
+/* pagination */
+
+.pagination {
+    text-align:center;
+    width:100%;
+    text-transform: uppercase;
+}
+
+
+.pagination-single {
+    text-align:center;
+    width:100%;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 2px 0 0;
+    line-height: 1;
+    text-decoration: none;
+    border-radius: 2px;
+    font-weight: 600;
+    color:white;
+    text-transform: uppercase;
+}
+
+.pagination-single .title-pag {
+    background:#E5A75E;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 2px 0 0;
+    border-radius: 2px;
+    font-weight: 600;
+    color: black;
+}
+
+.pagination-single .title-pag-white {
+    background:#E5A75E;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 2px 0 0;
+    border-radius: 2px;
+    font-weight: 600;
+    color: white;
+}
+
+
+
+.pagination-single a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 2px 0 0;
+    line-height: 1;
+    text-decoration: none;
+    border-radius: 2px;
+    font-weight: 600;
+    color:white;
+    text-transform: uppercase;
+    background-color:none;
+}
+
+.page-numbers {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 2px 0 0;
+    line-height: 1;
+    text-decoration: none;
+    border-radius: 2px;
+    font-weight: 600;
+    
+}
+
+a.page-numbers {
+    color: white;
+    text-transform: uppercase;
+}
+
+.page-numbers.current, a.page-numbers:hover {
+    background: #E5A75E;
+  
+}
+    
+
+
+
 /* footer styles */
 
 footer {
     background-color:#E5A75E;
-    height:100px;
+    padding:50px;
+    text-align:center;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-footer h1 {
-    color: #454545;
-    line-height: 100px;
-    text-align: center;
-    text-transform: uppercase;
+.dev {
+    font-size:10px;
+    font-weight: normal;
 }
 
 /* MEDIA QUERIES */
@@ -672,10 +806,19 @@ footer h1 {
 
     .content .post-area .post h1 {
         padding:30px;
+
     }
+ 
+
+   
 
     .content .post-area .post .post-text {
         font-size: 16px;
+    }
+
+    .content .post-area .post .post-text a {
+        text-decoration: none;
+        text-transform: uppercase;
     }
 
     .sidebar .sidebar-box .sidebar-text {
