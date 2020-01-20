@@ -17,8 +17,8 @@
                     }
 
                     ?>
-                <li><a href="<?php the_permalink() ?>">leia do início</a></li>
-                <li class="archive-title">arquivo</li>
+                <li><a href="<?php the_permalink() ?>">FIRST</a></li>
+                <li class="archive-title">ARCHIVE</li>
 
                 <?php 
                     $lastpost = new WP_Query(array(
@@ -32,7 +32,7 @@
 
                     ?>
 
-                <li><a href="<?php the_permalink() ?>">veja última postagem</a></li>
+                <li><a href="<?php the_permalink() ?>">LATEST</a></li>
             </ul>
         </div>
 

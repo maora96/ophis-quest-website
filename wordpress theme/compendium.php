@@ -5,17 +5,17 @@
 
 <section class="content-single">
     <div class="single-post">
-        <h1>equipament</h1>
+        <h1>equipment</h1>
 
         <div class="archive-general">
             <div class="archive-page-box">
             <?php
-                $equipaments = new WP_Query(array(
-                    'post_type' => 'equipament'
+                $equipments = new WP_Query(array(
+                    'post_type' => 'equipment'
                 ));
 
-                while($equipaments->have_posts()) {
-                    $equipaments->the_post(); ?>
+                while($equipments->have_posts()) {
+                    $equipments->the_post(); ?>
 
                 <div class="compendium-single">
                     <?php the_post_thumbnail('compendium'); ?>

@@ -30,14 +30,7 @@
                             'theme_location' => 'headerMenuLocation'
                         ));
                     ?>
-                    <!--<li><a href="index.html">index</a></li>
-                    <li><a href="blogpost.html">blogpost</a></li>
-                    <li><a href="researchpage.html">research page</a></li>
-                    <li><a href="chooserace.html">choose race</a></li>
-                    <li><a href="archivepage.html">archive</a></li>
-                    <li><a href="followerlist.html">followers</a></li>
-                    <li><a href="receivefollower.html">receive follower</a></li>
-                    <li><a href="compendium.html">compendium</a></li> -->
+                   
                 </ul>
             </div>
 

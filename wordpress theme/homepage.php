@@ -17,9 +17,9 @@
                     }
 
                     ?>
-                    <li><a href="<?php the_permalink() ?>">leia do início</a></li>
+                    <li><a href="<?php the_permalink() ?>">FIRST</a></li>
                     <li class="archive-title">
-                        <button id="archivebtn">arquivo</button>
+                        <button id="archivebtn">ARCHIVE</button>
                     </li>
 
                     <?php 
@@ -34,7 +34,7 @@
 
                     ?>
 
-                    <li><a href="<?php the_permalink() ?>">veja última postagem</a></li>
+                    <li><a href="<?php the_permalink() ?>">LATEST</a></li>
                 </ul>
             </div>
             <div class="archive-posts" id="colldiv">
@@ -81,29 +81,7 @@
                 
                 <?php get_sidebar('main'); ?>
 
-                <!--
-                    <div class="sidebar-box">
-                    <h1>title here</h1>
-                    <div class="sidebar-text">
-                        <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem                        lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem  lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem                        lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem </p>
-                    </div>
-
-                </div>
-
-                <div class="sidebar-box">
-                    <h1>title here</h1>
-                    <div class="sidebar-text">
-                        <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem                        lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem  lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem                        lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem </p>
-                    </div>
-                </div>
-
-                <div class="sidebar-box">
-                    <h1>title here</h1>
-                    <div class="sidebar-text">
-                        <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem                        lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem  lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem                        lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem </p>
-                    </div>
-                </div> 
-                </div>-->
+               
             
         </section>
 

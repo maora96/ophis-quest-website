@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c39efc2-04ef-4ad0-a40b-8668478cebb3" name="Default Changelist" comment="" />
+    <list default="true" id="bcd9728f-b08d-4166-9608-095a2823da79" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +12,14 @@
       <executable />
     </execution>
   </component>
-  <component name="ProjectId" id="1V1IL6SHPZnxhoBzO5ysiXQMwfX" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1V2bNopJNbwiggjHhC4UcmHlwAs" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -21,13 +28,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Local Sites/ophisquest/app/public/wp-content/themes/ophisquest" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="PHP" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -46,13 +56,16 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7c39efc2-04ef-4ad0-a40b-8668478cebb3" name="Default Changelist" comment="" />
-      <created>1576414116248</created>
+      <changelist id="bcd9728f-b08d-4166-9608-095a2823da79" name="Default Changelist" comment="" />
+      <created>1576454099928</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1576414116248</updated>
-      <workItem from="1576414119651" duration="56000" />
-      <workItem from="1576452236253" duration="636000" />
+      <updated>1576454099928</updated>
+      <workItem from="1576454102413" duration="894000" />
+      <workItem from="1576498829131" duration="616000" />
+      <workItem from="1576607819675" duration="610000" />
+      <workItem from="1576673289263" duration="797000" />
+      <workItem from="1576674104570" duration="85000" />
     </task>
     <servers />
   </component>
@@ -60,13 +73,17 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1576454097118">
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1576673741933">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576454097118" />
-    <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1576452246921">
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576673741933" />
+    <state x="455" y="139" key="SettingsEditor" timestamp="1576674160197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576452246921" />
+    <state x="455" y="139" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1576674160197" />
+    <state x="851" y="544" key="com.intellij.ide.util.TipDialog" timestamp="1576607821572">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="851" y="544" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576607821572" />
   </component>
 </project>

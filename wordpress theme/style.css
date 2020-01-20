@@ -277,6 +277,8 @@ nav .account-info .fas {
     margin-bottom: 20px;
 }
 
+
+
 .content .post-area .post-research {
     width: 95%;
     height: auto;
@@ -329,6 +331,14 @@ nav .account-info .fas {
     padding: 40px;
     font-size: 18px;
     min-height: 600px;
+}
+
+.content .post-area .post-research .research-image-description {
+    display: none;
+}
+
+.content .post-area .post-research .research-image-description.active {
+    display: block;
 }
 
 .content .post-area .post-research .research-image-description .research-img {
@@ -715,6 +725,8 @@ a.page-numbers {
   
 }
     
+
+
 
 /* footer styles */
 

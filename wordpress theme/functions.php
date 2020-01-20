@@ -40,16 +40,16 @@ add_action('widgets_init', 'ophisquest_sidebar');
 
 
 function ophisquest_post_types() {
-    register_post_type('equipament', array(
+    register_post_type('equipment', array(
         'public' => true,
         'has_archive' => true,
         'supports' => array('thumbnail'),
         'labels' => array(
-            'name' => 'Equipaments',
+            'name' => 'Equipments',
             'add_new_item' => 'Add New Equipment',
-            'edit_item' => 'Edit Equipament',
+            'edit_item' => 'Edit Equipment',
             'all_items' => 'All Equipments',
-            'singular_name' => 'Equipament',
+            'singular_name' => 'Equipment',
             
         )
     ));
